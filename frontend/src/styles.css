@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+/* For the "Listening..." indication */
+.listening-indicator {
+    font-size: 1.2rem;
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .mic-icon {
+    font-size: 2rem;
+    color: #f44336;
+    animation: blink 1s infinite;
+    margin-right: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .result h3 {
+    margin-top: 0;
+  }
+  
+  .result p {
+    margin: 0;
+    white-space: pre-wrap; /* Preserve newlines */
+  }
+      
+
+  .speech-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .speak-btn, .pause-btn, .resume-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .speak-btn:hover, .pause-btn:hover, .resume-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .pause-btn, .resume-btn {
+    background-color: #ff9800;
+  }
+  
+  .pause-btn:disabled, .resume-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .dictate-btn {
+    background-color: #4caf50; /* Default green color for Start Dictating */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .dictate-btn.listening {
+    background-color: #f44336; /* Red color for Stop Dictating */
+  }
+  
+  .dictate-btn:hover {
+    opacity: 0.8;
+  }
+  
